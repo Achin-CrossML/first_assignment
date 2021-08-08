@@ -1,68 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-document.getElementById("demo").innerHTML = "My First JavaScript";
-</script>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <title>First Assignment</title>
+    <style>
+        .jumbotron{
+            padding:20px;
+            background: white;
+        }
+        label.col-md-4 {
+            text-align: right;
+        }
+        .container {
+            width: 36%;
+            background:#eee;
+            padding: 2%;
+            border: 3px solid #bbb8b8;
+        }
+        .row {
+            margin-top: 3% !important;
+        }
+        input{
+            width: 49% !important;
+        }
+        p {
+           font-weight: 700 !important;
+           margin-top: 3%;
+        }
+        select.col-md-8 {
+            width: 49%;
+        }
+        select.col-md-2 {
+    width: 15%;
+    margin-right: 2%;
+}
+
+
+
+
+    </style>
 </head>
 <body>
+<!--<script>-->
+<!--document.getElementById("demo").innerHTML = "My First JavaScript";-->
 
-<div class="Personal Information">
-        <h2>Personal Information</h2>
+<!--</script>-->
 
-<form>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname">
-</form>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="jumbotron">
+    <div class="container">
+        <form>
+            <p>Personal Information</p>
+            <div class="row">
+                <label class="col-md-4">First name:</label>
+                <input type="text" class="col-md-8" id="fname" name="fname">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Last name:</label>
+                <input type="text" class="col-md-8" id="lname" name="lname">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Date of Birth:</label>
+                <select class="col-md-2">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>Feburary</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select class="col-md-2">
+                    <option>Day</option>
+                    <option>January</option>
+                    <option>Feburary</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select class="col-md-2">
+                    <option>Year</option>
+                    <option>January</option>
+                    <option>Feburary</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-md-4">Gender:</label>
+                <select class="col-md-8">
+                    <option>Choose a gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <p>Account Information</p>
+            <div class="row">
+                <label class="col-md-4">Email:</label>
+                <input type="Email" class="col-md-8" id="email" name="email">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Re-type Email:</label>
+                <input type="email" class="col-md-8" id="re_email" name="reemail">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Password:</label>
+                <input type="password" class="col-md-8" id="pwd" name="password">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Re-type Password:</label>
+                <input type="password" class="col-md-8" id="re_pwd" name="re_password">
+            </div>
+            <div class="row">
+                <label class="col-md-4">Security Question:</label>
+                <select class="col-md-8">
+                    <option value="">--Select--</option>
+                    <option value="fathername">What is your father name?</option>
+                    <option value="petName">What is your pet name?</option>
+                    <option value="parentsMeet">When did your parents meet?</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-md-4">Security Answer:</label>
+                <input class="col-md-8" type="text">
+            </div>
+
+            <p>Contact Information</p>
+            <div class="row">
+                <label class="col-md-4">Address:</label>
+                <input class="col-md-8" type="text">
+            </div>
+            <div class="row">
+                <label class="col-md-4">City:</label>
+                <input class="col-md-8" type="text">
+            </div>
+            <div class="row">
+                <label class="col-md-4">State:</label>
+                <select class="col-md-8">
+                    <option></option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-md-4">Zip:</label>
+                <input class="col-md-4" type="text" style="width: 19% !important;
+    margin-right: 3%;">
+                <button class="col-md-4" style="width: 13%;" disabled>optional</button>
+            </div>
+            <div class="row">
+                <label class="col-md-4">Phone:</label>
+                <input class="col-md-8" type="text">
+            </div>
+
+        </form>
+    </div>
 </div>
-
-<div class="Account Information">
-        <h2>Account Information</h2>
-
-<form>
-  <label for="email">Email:</label>
-  <input type="Email" id="email" name="fname"><br><br>
-    <label for="email">Re-type Email:</label>
-  <input type="email" id="re_email" name="fname"><br><br>
-  <label for="email">Password:</label>
-  <input type="password" id="pwd" name="password"><br><br>
-    <label for="email">Re-type Password:</label>
-  <input type="password" id="re_pwd" name="re_password"><br>
-    Security Question:<select>
-    <option></option>
-    <option>What is your father name?</option>
-    <option>What is your pet name?</option>
-    <option>When did your parents meet?</option>
-</select><br>
-    <input type="text">
-</form>
-
-
-
-</div>
-<div class="Contact Information">
-        <h2>Contact Information</h2>
-
-<form>
-  <label>Address:</label>
-  <input type="text" id="address" name="address"><br><br>
-  <label>City:</label>
-  <input type="text" id="city" name="city"><br><br>
-    <input type="text" id="state" name="re_password"><br>
-    State:<select>
-
-</select>
-</form>
-    <input type="button" value="Reset">
-    <input type="button" value="submit">
-</div>
-
-
-
 
 </body>
 </html>
