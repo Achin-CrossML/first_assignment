@@ -8,6 +8,9 @@
 
     <title>First Assignment</title>
     <style>
+    span {
+    margin-left: 33%
+    }
         .jumbotron{
             padding:20px;
             background: white;
@@ -25,19 +28,21 @@
             margin-top: 3% !important;
         }
         input{
-            width: 49% !important;
+            width: 53% !important;
         }
         p {
            font-weight: 700 !important;
            margin-top: 3%;
         }
         select.col-md-8 {
-            width: 49%;
+            width: 53%;
         }
         select.col-md-2 {
     width: 15%;
     margin-right: 2%;
 }
+select{
+height: 27px }
 
 
 
@@ -115,20 +120,25 @@
                     <option>November</option>
                     <option>December</option>
                 </select>
+                 <img src="https://image.flaticon.com/icons/png/512/189/189665.png" style="width: 3%;
+    margin-left: -1%;">
             </div>
             <div class="row">
                 <label class="col-md-4">Gender:</label>
-                <select class="col-md-8">
+                <select class="col-md-8" style="width: 49%">
                     <option>Choose a gender</option>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Other</option>
                 </select>
+                <img src="https://image.flaticon.com/icons/png/512/189/189665.png" style="width: 3%;
+    margin-left: 1%;">
             </div>
             <p>Account Information</p>
             <div class="row">
                 <label class="col-md-4">Email:</label>
                 <input type="Email" class="col-md-8" id="email" name="email">
+                <span>(Your email will be your username)</span>
             </div>
             <div class="row">
                 <label class="col-md-4">Re-type Email:</label>
@@ -137,6 +147,7 @@
             <div class="row">
                 <label class="col-md-4">Password:</label>
                 <input type="password" class="col-md-8" id="pwd" name="password">
+                 <span>(Min. 8 characters, 1 number, case-sensitive)</span>
             </div>
             <div class="row">
                 <label class="col-md-4">Re-type Password:</label>
@@ -144,16 +155,19 @@
             </div>
             <div class="row">
                 <label class="col-md-4">Security Question:</label>
-                <select class="col-md-8">
-                    <option value="">--Select--</option>
+                <select class="col-md-8" style="width: 57%">
+                    <option value="">Choose a security question</option>
                     <option value="fathername">What is your father name?</option>
                     <option value="petName">What is your pet name?</option>
                     <option value="parentsMeet">When did your parents meet?</option>
                 </select>
+                <img src="https://image.flaticon.com/icons/png/512/189/189665.png" style="width: 3%;
+    margin-left: 1%;">
             </div>
             <div class="row">
                 <label class="col-md-4">Security Answer:</label>
                 <input class="col-md-8" type="text">
+                 <span>(Not case-sensitive)</span>
             </div>
 
             <p>Contact Information</p>
@@ -168,7 +182,7 @@
             <div class="row">
                 <label class="col-md-4">State:</label>
                 <select class="col-md-8">
-                    <option></option>
+                    <option>choose a state</option>
                 </select>
             </div>
             <div class="row">
@@ -179,7 +193,15 @@
             </div>
             <div class="row">
                 <label class="col-md-4">Phone:</label>
-                <input class="col-md-8" type="text">
+                <input class="col-md-3" type="text" style="width: 29% !important">
+<img src="https://image.flaticon.com/icons/png/512/189/189665.png" style="width: 3%;
+    margin-left: -19%;">
+                <select class="col-md-3" style="width: 15% !important;
+    margin-left: 5%;
+    height: 27px;">
+                    <option>mobile</option>
+                </select>
+                <span>(No spaces or dashes)</span>
             </div>
 
         </form>
